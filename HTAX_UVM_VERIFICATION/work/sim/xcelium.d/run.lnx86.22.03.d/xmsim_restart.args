@@ -1,0 +1,41 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INPUT
+"@source /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/files/tcl/uvm_sim.tcl"
++UVM_VERBOSITY=UVM_LOW
++access+rwc
+-uvmhome
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+-sv_lib
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/lib/libuvmpli.so
+-INPUT
+waves.tcl
+-COVOVERWRITE
+-COVWORKDIR
+/home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/sim/regression/htax_regress.avinsing7.24_12_03_17_52_39_9544/chain_0/all_test/run_40/cov_work
+-SVSEED
+random
++UVM_TESTNAME=same_delay_same_length_all_port_parallel_random_test
+-MESSAGES
+-SV_LIB
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/lib/libuvmdpi.so
++EMGRLOG
+xrun.log
+-XLSTIME
+1733270228
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.22.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.22.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.22.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	22.03-s012"
+-XLNAME
+./xcelium.d/run.lnx86.22.03.d/n04-hades.olympus.ece.tamu.edu_1725845

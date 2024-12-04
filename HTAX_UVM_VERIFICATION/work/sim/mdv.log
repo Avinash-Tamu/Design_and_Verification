@@ -1,0 +1,60 @@
+[ERROR] 2024-11-29 02:11:57 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-29 02:12:03 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45007
+[ERROR] 2024-11-29 02:22:42 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-29 02:22:50 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36129
+[ERROR] 2024-11-29 05:25:41 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-29 05:25:48 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39467
+[ERROR] 2024-11-30 05:37:11 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-30 05:37:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35117
+[ERROR] 2024-11-30 18:03:29 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-30 18:03:36 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32793
+[ERROR] 2024-11-30 19:47:38 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 02:15:26 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-01 02:15:33 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39911
+[ERROR] 2024-12-01 03:16:06 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-5] - [FATAL] - expected id f7909076-cc53-4805-b55b-9c0c046a06af but current transaction was e5e50c56-938e-4a3e-9a34-b8ee3ad25080
+[ERROR] 2024-12-01 03:16:06 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-9] - [FATAL] - expected id e5e50c56-938e-4a3e-9a34-b8ee3ad25080 but current transaction was null
+[ERROR] 2024-12-01 04:18:49 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 04:20:31 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-1] - [FATAL] - expected id 3b3b1f12-2471-48de-b0ba-c70fb5934407 but current transaction was null
+[ERROR] 2024-12-01 04:20:32 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-6] - [FATAL] - expected id 4c38d3e0-0749-4fc1-b383-e2ff67496235 but current transaction was null
+[ERROR] 2024-12-01 04:20:32 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-9] - [FATAL] - expected id 3696a14f-5f5f-44d3-8a6d-9b361c149c33 but current transaction was null
+[ERROR] 2024-12-01 04:28:53 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-3] - [FATAL] - expected id ebea3f85-91d2-4d6b-aff6-b4c1adab1b90 but current transaction was null
+[ERROR] 2024-12-01 04:28:53 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 04:31:08 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-4] - [FATAL] - expected id 12eca229-aef0-4e9f-a53e-86b5ec9175a2 but current transaction was 07451c8b-7431-4d61-b9d7-7fcb2d65bddc
+[ERROR] 2024-12-01 04:32:39 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 04:33:16 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-5] - [FATAL] - expected id 5db69228-149c-4057-aab5-eea10bd5c480 but current transaction was 6750c6ce-aa70-46a6-b1ad-889c7bb51fc5
+[ERROR] 2024-12-01 04:33:16 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 04:35:33 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-01 04:36:35 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about is_lang_vlog
+[ERROR] 2024-12-01 04:56:58 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about is_lang_vlog
+[ERROR] 2024-12-01 05:16:28 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-6] - [FATAL] - expected id e572e895-5b10-4094-9e79-998ca37e0ffc but current transaction was 2eafad72-8aaf-4e68-9a38-4ae05ebdbbd2
+[ERROR] 2024-12-01 05:16:28 [com.cadence.mdv.vplanTreeHandler.PlanEditingManager] [pool-10-thread-3] - [FATAL] - expected id 2eafad72-8aaf-4e68-9a38-4ae05ebdbbd2 but current transaction was null
+[ERROR] 2024-12-01 07:24:39 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-01 07:24:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38571
+[ERROR] 2024-12-01 22:31:50 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-01 22:31:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35763
+[ERROR] 2024-12-02 02:41:41 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-02 02:41:48 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37761
+[ERROR] 2024-12-02 05:05:54 [com.cadence.mdv.services.ClientLinkToServerImpl] [frontend-scheduler-368] - 
+
+ **** Failed to send heartbeat to server. Will not attempt to send additional heartbeats from now on
+
+
+[ERROR] 2024-12-02 05:08:24 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-02 05:08:31 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43559
+[ERROR] 2024-12-02 20:43:21 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-02 20:43:27 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34709
+[ERROR] 2024-12-03 03:02:45 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 03:02:52 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37779
+[ERROR] 2024-12-03 04:09:35 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 04:09:41 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32913
+[INFO ] 2024-12-03 08:15:09 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44759
+[ERROR] 2024-12-03 08:18:27 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 08:18:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33969
+[ERROR] 2024-12-03 08:24:18 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 08:24:24 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33229
+[INFO ] 2024-12-03 08:35:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42671
+[ERROR] 2024-12-03 09:44:38 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 09:44:45 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42473
+[ERROR] 2024-12-03 18:30:44 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 18:30:51 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43269
+[INFO ] 2024-12-03 22:08:29 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38143

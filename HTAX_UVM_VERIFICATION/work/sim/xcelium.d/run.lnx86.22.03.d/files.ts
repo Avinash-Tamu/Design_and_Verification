@@ -1,0 +1,9 @@
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/design/htax_top.v
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/design/htax_combinatoric_arbiter.v
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/design/htax_outport_arbiter.v
+1733269810 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/design/htax_outport_data_mux.v
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/tb/htax_defines.sv
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/tb/htax_pkg.sv
+1732151163 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/tb/htax_top.sv
+1732151163 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/tb/htax_tx_interface.sv
+1732151162 /home/grads/a/avinsing7/lab-10-Avinash-Tamu/work/tb/htax_rx_interface.sv

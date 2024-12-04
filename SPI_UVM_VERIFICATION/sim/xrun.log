@@ -1,0 +1,327 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Dec 01, 2024 at 20:01:17 CST
+xrun
+	-f run.f
+		-64
+		-uvmhome /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+		-incdir ../sv
+		../design/spi_master.v
+		../design/spi_slave.v
+		../design/spi_top_dut.sv
+		../uvm/spi_pkg.sv
+		../tb/spi_top_testbench.sv
+xmvlog: *W,NOTIND: unable to access -INCDIR ../sv (No such file or directory).
+file: ../design/spi_master.v
+  assign data_out = read ? data_out_reg: 8'h0;
+       |
+xmvlog: *E,EXPSMC (../design/spi_master.v,12|7): expecting a semicolon (';') [3.2.2(IEEE)].
+endmodule
+        |
+xmvlog: *E,MISEXX (../design/spi_master.v,40|8): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+	module worklib.spi_master:v
+		errors: 2, warnings: 0
+file: ../design/spi_slave.v
+file: ../design/spi_top_dut.sv
+file: ../uvm/spi_pkg.sv
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,12|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 12, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,12|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 12, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,12|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_create_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 12, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,12|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_get_type_name_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 427], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 12, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_end
+                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,15|22): expecting a statement [9(IEEE)].
+(`define macro: uvm_object_utils_end [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 264], `include file: ../uvm/spi_sequence_item.sv line 15, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,MISEXX (../uvm/spi_sequence_item.sv,17|38): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,EXPRPA (../uvm/spi_sequence_item.sv,17|38): expecting a right parenthesis (')') [9.7.1(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,17|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,17|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,17|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,17|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_create_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_begin(spi_seq_item)
+                                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,17|38): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_get_type_name_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 427], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `include file: ../uvm/spi_sequence_item.sv line 17, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils_end
+                      |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,20|22): expecting a statement [9(IEEE)].
+(`define macro: uvm_object_utils_end [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 264], `include file: ../uvm/spi_sequence_item.sv line 20, file: ../uvm/spi_pkg.sv line 5)
+  endfunction
+            |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,24|12): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_sequence_item.sv line 24, file: ../uvm/spi_pkg.sv line 5)
+  endfunction
+            |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence_item.sv,28|12): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_sequence_item.sv line 28, file: ../uvm/spi_pkg.sv line 5)
+  `uvm_object_utils(spi_sequence)
+                                |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,6|32): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: ../uvm/spi_sequence.sv line 6, file: ../uvm/spi_pkg.sv line 6)
+  `uvm_object_utils(spi_sequence)
+                                |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,6|32): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: ../uvm/spi_sequence.sv line 6, file: ../uvm/spi_pkg.sv line 6)
+  `uvm_object_utils(spi_sequence)
+                                |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,6|32): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_object_create_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: ../uvm/spi_sequence.sv line 6, file: ../uvm/spi_pkg.sv line 6)
+  `uvm_object_utils(spi_sequence)
+                                |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,6|32): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_get_type_name_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 427], `define macro: uvm_object_utils_begin [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: ../uvm/spi_sequence.sv line 6, file: ../uvm/spi_pkg.sv line 6)
+  `uvm_object_utils(spi_sequence)
+                                |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,6|32): expecting a statement [9(IEEE)].
+(`define macro: uvm_object_utils_end [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 264], `define macro: uvm_object_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: ../uvm/spi_sequence.sv line 6, file: ../uvm/spi_pkg.sv line 6)
+  spi_seq_item seq;
+                 |
+xmvlog: *E,MISEXX (../uvm/spi_sequence.sv,7|17): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`include file: ../uvm/spi_sequence.sv line 7, file: ../uvm/spi_pkg.sv line 6)
+  function new(string name="spi_sequence");
+         |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,10|9): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_sequence.sv line 10, file: ../uvm/spi_pkg.sv line 6)
+  endfunction
+            |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,12|12): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_sequence.sv line 12, file: ../uvm/spi_pkg.sv line 6)
+  endtask
+        |
+xmvlog: *E,NOTSTT (../uvm/spi_sequence.sv,22|8): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_sequence.sv line 22, file: ../uvm/spi_pkg.sv line 6)
+    `uvm_component_utils(spi_driver)
+                                   |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,3|35): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_driver.sv line 3, file: ../uvm/spi_pkg.sv line 7)
+    `uvm_component_utils(spi_driver)
+                                   |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,3|35): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_driver.sv line 3, file: ../uvm/spi_pkg.sv line 7)
+    `uvm_component_utils(spi_driver)
+                                   |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,3|35): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_get_type_name_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 427], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_driver.sv line 3, file: ../uvm/spi_pkg.sv line 7)
+    endfunction
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,8|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 8, file: ../uvm/spi_pkg.sv line 7)
+    endfunction
+              |
+xmvlog: *E,EXPSMC (../uvm/spi_driver.sv,14|14): expecting a semicolon (';') [10.2.2][10.2(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 14, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.start<=1;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,26|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 26, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.start<=1;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,26|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 26, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_master<=1;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,27|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 27, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_master<=1;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,27|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 27, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_slave<=1;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,28|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 28, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_slave<=1;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,28|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 28, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.data_in_master<=trans.data_in_master;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,29|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 29, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.data_in_master<=trans.data_in_master;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,29|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 29, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.data_in_slave<=trans.data_in_slave;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,30|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 30, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.data_in_slave<=trans.data_in_slave;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,30|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 30, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_master<=0;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,35|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 35, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_master<=0;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,35|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 35, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_slave<=0;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,36|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 36, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.load_slave<=0;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,36|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 36, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_master<=0;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,37|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 37, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_master<=0;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,37|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 37, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_slave<=0;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,38|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 38, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_slave<=0;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,38|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 38, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_master<=1;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,40|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 40, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_master<=1;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,40|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 40, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_slave<=1;
+             |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,41|13): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 41, file: ../uvm/spi_pkg.sv line 7)
+      `DRIV_IF.read_slave<=1;
+              |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,41|14): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 41, file: ../uvm/spi_pkg.sv line 7)
+      trans.data_out_master=`DRIV_IF.data_out_master;
+                                   |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,46|35): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 46, file: ../uvm/spi_pkg.sv line 7)
+      trans.data_out_master=`DRIV_IF.data_out_master;
+                                    |
+xmvlog: *E,ILLPRI (../uvm/spi_driver.sv,46|36): illegal expression primary [4.2(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 46, file: ../uvm/spi_pkg.sv line 7)
+      trans.data_out_slave=`DRIV_IF.data_out_slave;
+                                  |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,47|34): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 47, file: ../uvm/spi_pkg.sv line 7)
+      trans.data_out_slave=`DRIV_IF.data_out_slave;
+                                   |
+xmvlog: *E,ILLPRI (../uvm/spi_driver.sv,47|35): illegal expression primary [4.2(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 47, file: ../uvm/spi_pkg.sv line 7)
+    `DRIV_IF.start<=0;
+           |
+xmvlog: *E,NOTDIR (../uvm/spi_driver.sv,50|11): `DRIV_IF: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 50, file: ../uvm/spi_pkg.sv line 7)
+    `DRIV_IF.start<=0;
+            |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,50|12): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 50, file: ../uvm/spi_pkg.sv line 7)
+  endtask
+        |
+xmvlog: *E,NOTSTT (../uvm/spi_driver.sv,51|8): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_driver.sv line 51, file: ../uvm/spi_pkg.sv line 7)
+  `uvm_component_utils(spi_monitor)
+                                  |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,20|34): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_monitor.sv line 20, file: ../uvm/spi_pkg.sv line 9)
+  `uvm_component_utils(spi_monitor)
+                                  |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,20|34): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_monitor.sv line 20, file: ../uvm/spi_pkg.sv line 9)
+  `uvm_component_utils(spi_monitor)
+                                  |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,20|34): expecting a statement [9(IEEE)].
+(`define macro: m_uvm_get_type_name_func [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 427], `define macro: uvm_component_utils [/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: ../uvm/spi_monitor.sv line 20, file: ../uvm/spi_pkg.sv line 9)
+  endfunction
+            |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,28|12): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_monitor.sv line 28, file: ../uvm/spi_pkg.sv line 9)
+   endfunction
+             |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,39|13): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_monitor.sv line 39, file: ../uvm/spi_pkg.sv line 9)
+  endtask
+        |
+xmvlog: *E,NOTSTT (../uvm/spi_monitor.sv,66|8): expecting a statement [9(IEEE)].
+(`include file: ../uvm/spi_monitor.sv line 66, file: ../uvm/spi_pkg.sv line 9)
+	package worklib.spi_pkg:sv
+		errors: 64, warnings: 0
+file: ../tb/spi_top_testbench.sv
+`include "spi_sequence_item.sv"
+                              |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,15|30): cannot open include file 'spi_sequence_item.sv'.
+`include "spi_sequence.sv"
+                         |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,16|25): cannot open include file 'spi_sequence.sv'.
+`include "spi_driver.sv"
+                       |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,17|23): cannot open include file 'spi_driver.sv'.
+`include "spi_interface.sv"
+                          |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,18|26): cannot open include file 'spi_interface.sv'.
+`include "spi_monitor.sv"
+                        |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,19|24): cannot open include file 'spi_monitor.sv'.
+`include "spi_agent.sv"
+                      |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,20|22): cannot open include file 'spi_agent.sv'.
+`include "spi_scorecard.sv"
+                          |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,21|26): cannot open include file 'spi_scorecard.sv'.
+`include "spi_environment.sv"
+                            |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,22|28): cannot open include file 'spi_environment.sv'.
+`include "spi_test.sv"
+                     |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,23|21): cannot open include file 'spi_test.sv'.
+`include "spi_master.v"
+                      |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,24|22): cannot open include file 'spi_master.v'.
+`include "spi_slave.v"
+                     |
+xmvlog: *E,COFILX (../tb/spi_top_testbench.sv,25|21): cannot open include file 'spi_slave.v'.
+import spi_pkg::*;
+             |
+xmvlog: *E,NOPBIND (../tb/spi_top_testbench.sv,14|13): Package spi_pkg could not be bound.
+	module worklib.top_tb:sv
+		errors: 12, warnings: 0
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s012: Exiting on Dec 01, 2024 at 20:01:18 CST  (total: 00:00:01)

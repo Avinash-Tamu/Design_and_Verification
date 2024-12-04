@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-f
+run_vm.f
++UVM_TESTNAME=same_delay_same_length_all_port_parallel_random_test
+-define
+TEST12
