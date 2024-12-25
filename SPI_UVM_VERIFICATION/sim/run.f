@@ -15,21 +15,21 @@ Copyright Cadence Design Systems (c)2015
 //*** add incdir include directories here
 
 // compile files
-//*** add compile files here
-//xrun 
-//+UVM_TESTNAME=base_test 
-//+UVM_TESTNAME=short_packet_test
-//+UVM_TESTNAME=set_config_test
-//+UVM_VERBOSITY=UVM_HIGH 
 
-//+SVSEED=random
++UVM_TESTNAME=spi_test
++UVM_VERBOSITY=UVM_HIGH 
+
++SVSEED=random
 
 
--incdir ../sv // include directory for sv files
-//../sv/yapp_pkg.sv // compile YAPP package
-../design/spi_master.v
-../design/spi_slave.v
-../design/spi_top_dut.sv
-../uvm/spi_pkg.sv
-../tb/spi_top_testbench.sv // compile top level module
+-incdir ../uvm \
+-incdir ../design \
+-incdir ../tb 
+
+../uvm/spi_pkg.sv \
+../uvm/spi_interface.sv \
+../design/spi_master.v \
+../design/spi_slave.v \
+../design/spi_top_dut.sv \
+../tb/spi_top_testbench.sv 
 
