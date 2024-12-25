@@ -12,12 +12,15 @@ class spi_seq_item extends uvm_sequence_item;
   `uvm_object_utils_begin(spi_seq_item)
   `uvm_field_int(data_in_master,UVM_ALL_ON)
   `uvm_field_int(data_in_slave,UVM_ALL_ON)
+  `uvm_field_int(data_out_master,UVM_ALL_ON)
+  `uvm_field_int(data_out_slave,UVM_ALL_ON)
+  `uvm_field_int(load_master,UVM_ALL_ON)
+  `uvm_field_int(load_slave,UVM_ALL_ON)
+  `uvm_field_int(read_master,UVM_ALL_ON)
+  `uvm_field_int(read_slave,UVM_ALL_ON)
   `uvm_object_utils_end
 
-  `uvm_object_utils_begin(spi_seq_item)
-  `uvm_field_int(data_in_master,UVM_ALL_ON)
-  `uvm_field_int(data_in_slave,UVM_ALL_ON)
-  `uvm_object_utils_end
+
   
   function new(string name="spi_seq_item");
     super.new();
