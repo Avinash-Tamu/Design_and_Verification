@@ -5,7 +5,6 @@ package spi_pkg;
     `include "../uvm/spi_sequence_item.sv"
 `include "../uvm/spi_sequence.sv"
 `include "../uvm/spi_driver.sv"
-`include "../uvm/spi_interface.sv"
 `include "../uvm/spi_monitor.sv"
 `include "../uvm/spi_agent.sv"
 `include "../uvm/spi_scorecard.sv"
