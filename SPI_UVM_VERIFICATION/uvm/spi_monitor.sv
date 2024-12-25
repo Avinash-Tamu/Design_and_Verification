@@ -12,24 +12,17 @@ class spi_monitor extends uvm_monitor;
   
   virtual spi_interface vif;
   spi_seq_item trans;
-  //---------------------------------------
-  //Analysis port declaration
-  //---------------------------------------
+
   uvm_analysis_port#(spi_seq_item)ap;
   
   `uvm_component_utils(spi_monitor)
   
-  //---------------------------------------
-  //Constructor
-  //---------------------------------------
+
   function new(string name, uvm_component parent);
     super.new(name, parent);
     ap=new("ap", this);
   endfunction
-  
-  //---------------------------------------
-  //Build phase
-  //---------------------------------------
+
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
 	trans = spi_seq_item::type_id::create("TRANS");
@@ -39,9 +32,7 @@ class spi_monitor extends uvm_monitor;
    endfunction
   
   
-  //---------------------------------------
-  //Run phase
-  //---------------------------------------
+
   virtual task run_phase(uvm_phase phase);
     super.run_phase(phase);
     wait(`MON_IF.start);
@@ -61,6 +52,7 @@ class spi_monitor extends uvm_monitor;
         trans.data_out_master=`MON_IF.data_out_master;
         trans.data_out_slave=`MON_IF.data_out_slave;
       join  
+      `uvm_info(get_type_name(), $sformatf("Packet Collected :\n%s", trans.sprint()), UVM_LOW)
       ap.write(trans);
       end
   endtask
