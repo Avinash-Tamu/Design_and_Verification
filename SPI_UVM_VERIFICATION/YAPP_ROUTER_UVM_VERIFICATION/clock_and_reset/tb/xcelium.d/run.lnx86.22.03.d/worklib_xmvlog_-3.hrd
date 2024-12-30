@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+../sv
+-I_INCDIR
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/../additions/sv

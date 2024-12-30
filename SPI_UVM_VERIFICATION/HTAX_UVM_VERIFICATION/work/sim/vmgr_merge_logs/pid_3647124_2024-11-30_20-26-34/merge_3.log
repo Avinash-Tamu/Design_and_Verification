@@ -1,0 +1,1 @@
+vmanager: *I,coverage.merge_op_done_no_warns: Merge operation (load to memory) is done without any conflicts.
