@@ -1,9 +1,0 @@
-//
-// File created by:  xrun
-// Do not modify this file
-//
--f
-run_vm.f
-+UVM_TESTNAME=simple_random_test
--define
-TEST1
