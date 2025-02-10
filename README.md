@@ -1,6 +1,6 @@
 # UVM Verification for HTAX, YAPP and SPI
 
-This repository contains UVM-based verification environments for two IP blocks:
+This repository contains UVM-based verification environments for multiple IP blocks:
 - **HTAX (High Throughput) Interface**
 - **SPI (Serial Peripheral Interface)**
 - **YAPP ROUTER (Yet Another Packet)**
