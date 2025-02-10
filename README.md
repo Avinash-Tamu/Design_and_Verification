@@ -1,4 +1,4 @@
-# UVM Verification for HTAX, YAPP and SPI
+# Design and Verification
 
 This repository contains UVM-based verification environments for multiple IP blocks and MIPS Processor.
 - **HTAX (High Throughput) Interface**
