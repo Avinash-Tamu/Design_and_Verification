@@ -1,0 +1,4 @@
+#!/bin/sh
+\rm -fr cov_work waves.shm *.d *.history *.so INCA_libs .sim* *.log tr_db .mvfs_* *_sc gdb_cmd_ncv *.key *.sl simv* ./tr_db ucli.key vc_hdrs.h inter.vpd DVEfiles/ csrc/
+
+\rm -fr sw_lib
