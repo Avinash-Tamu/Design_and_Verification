@@ -15,6 +15,7 @@
 ../design/register_file.sv 
 ../design/PipelinedMIPS32.sv 
 ../design/Hazard.sv
+../design/ForwardingBlock.sv
 ../tb/tb_mips32.sv 
 
 
