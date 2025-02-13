@@ -41,6 +41,11 @@ wire IF_write;
 wire PC_write;
 wire bubble;
 
+// Forwarding Unit 
+wire [1:0] AluOpCtrlA_ID;
+wire [1:0] AluOpCtrlB_ID;
+wire DataMemForwardCtrl_EX_IF_ID;
+wire DataMemForwardCtrl_MEM_IF_ID;
 
 wire SignExtend; // Extend the sign of the immedieate value 
 wire UseShamt; // To change the source registers in case of shift operations
@@ -91,7 +96,8 @@ wire [4:0] Shamt_ID_EX;
 wire [4:0] RW_ID_EX;
 wire [31:0] Data_Memory_Input_ID_EX;
   
-
+reg [31:0] alu_src1;
+reg [31:0] alu_src2;
 
 // Stage 4
 // Data Memory 
@@ -205,11 +211,26 @@ HazardUnit Hazard (
 		.currentRt(RT_IF_ID), 
 		.previousRt(RT_ID_EX), 
 		.UseShamt(UseShamt),  // not implemented yet
-		.UseImmed(UseImmed), 
+		.UseImmed(UseImmed), // not implemented yet
 		.clk(clk), 
 		.op(Opcode_IF_ID),
 		.previousRd(RD_ID_EX),
 		.reset(reset)
+);
+
+// Forwarding Blockl 
+ForwardingBlock Forward ( 
+		.UseImmed(UseImmed),
+		.ID_Rs(RS_IF_ID), // source
+		.ID_Rt(RT_IF_ID), // target
+		.EX_Rw(RW_ID_EX), // destination
+		.MEM_Rw(RW_EX_MEM), // 2 clk delay destination 
+		.EX_RegWrite(RegWrite_ID_EX), 
+		.MEM_RegWrite(RegWrite_EX_MEM), 
+		.AluOpCtrlA(AluOpCtrlA_ID), 
+		.AluOpCtrlB(AluOpCtrlB_ID), 
+		.DataMemForwardCtrl_EX(DataMemForwardCtrl_EX_IF_ID), 
+		.DataMemForwardCtrl_MEM(DataMemForwardCtrl_MEM_IF_ID) 
 );
 
 
@@ -233,10 +254,10 @@ always @ (posedge clk or posedge reset) begin
 		MemRead_ID_EX<=1'b0;
 		MemWrite_ID_EX<=1'b0;
 		ALUOp_ID_EX<=2'b0;
-		//AluOpCtrlA_ID_EX<=2'b0;
-		//AluOpCtrlB_ID_EX<=2'b0;
-		//DataMemForwardCtrl_EX_ID_EX<=1'b0;
-		//DataMemForwardCtrl_MEM_ID_EX<=1'b0;
+		AluOpCtrlA_ID_EX<=2'b0;
+		AluOpCtrlB_ID_EX<=2'b0;
+		DataMemForwardCtrl_EX_ID_EX<=1'b0;
+		DataMemForwardCtrl_MEM_ID_EX<=1'b0;
           Imm_Ext <= 32'b0;
           Branch_ID_EX <= 1'b0;
           Jump_ID_EX <=1'b0;
@@ -254,10 +275,10 @@ always @ (posedge clk or posedge reset) begin
 		MemRead_ID_EX<=1'b0;
 		MemWrite_ID_EX<=1'b0;
 		ALUOp_ID_EX<=4'b0;
-		//AluOpCtrlA_ID_EX<=2'b0;
-		//AluOpCtrlB_ID_EX<=2'b0;
-		//DataMemForwardCtrl_EX_ID_EX<=1'b0;
-		//DataMemForwardCtrl_MEM_ID_EX<=1'b0;
+		AluOpCtrlA_ID_EX<=2'b0;
+		AluOpCtrlB_ID_EX<=2'b0;
+		DataMemForwardCtrl_EX_ID_EX<=1'b0;
+		DataMemForwardCtrl_MEM_ID_EX<=1'b0;
 		IM_20_0_ID_EX<=21'b0;
 		Sign_Extended_ID_EX<=32'b0;
 		Registers_A_ID_EX<=32'b0;
@@ -271,10 +292,10 @@ always @ (posedge clk or posedge reset) begin
 		MemRead_ID_EX<=mem_read;
 		MemWrite_ID_EX<=mem_write;
 		ALUOp_ID_EX<=alu_op;
-		//AluOpCtrlA_ID_EX<=AluOpCtrlA_ID;
-		//AluOpCtrlB_ID_EX<=AluOpCtrlB_ID;
-		//DataMemForwardCtrl_EX_ID_EX<=DataMemForwardCtrl_EX_IF_ID;
-		//DataMemForwardCtrl_MEM_ID_EX<=DataMemForwardCtrl_MEM_IF_ID;
+		AluOpCtrlA_ID_EX<=AluOpCtrlA_ID;
+		AluOpCtrlB_ID_EX<=AluOpCtrlB_ID;
+		DataMemForwardCtrl_EX_ID_EX<=DataMemForwardCtrl_EX_IF_ID;
+		DataMemForwardCtrl_MEM_ID_EX<=DataMemForwardCtrl_MEM_IF_ID;
           Imm_Ext <= imm_ext;
           ALU_Src <= alu_src;
 		IM_20_0_ID_EX<=IM_IF_ID[20:0];
@@ -307,12 +328,31 @@ assign Funccode_ID_EX = IM_20_0_ID_EX [5:0];
 
 
 assign RW_ID_EX = RegDst_ID_EX ? RD_ID_EX : RT_ID_EX;
- assign read_data2 = (ALU_Src==1'b1) ? Imm_Ext : Registers_B_ID_EX;  
+
+always @(*)begin 
+	case (AluOpCtrlA_ID_EX)
+		2'b01: alu_src1 = Register_W_MEM_WB;
+		2'b10: alu_src1 = ALU_OUT_EX_MEM;
+		2'b11: alu_src1 = Registers_A_ID_EX;
+	endcase
+end
+
+// Input 2 
+always @(*)begin 
+	case (AluOpCtrlB_ID_EX)
+		2'b00: alu_src2 = Imm_Ext;
+		2'b01: alu_src2 = Register_W_MEM_WB;
+		2'b10: alu_src2 = ALU_OUT_EX_MEM;
+		2'b11: alu_src2 = Registers_B_ID_EX;
+	endcase
+end 
+
+ assign Data_Memory_Input_ID_EX = DataMemForwardCtrl_EX_ID_EX ?  Register_W_MEM_WB : (ALU_Src==1'b1) ? Imm_Ext : Registers_B_ID_EX;
 
  // ALU   
  alu alu_unit(
-          .src1(Registers_A_ID_EX),
-          .src2(read_data2),
+          .src1(alu_src1 ),
+          .src2(alu_src2),
           .alu_control(ALU_Control),
           .result(ALU_out),
           .zero(zero_flag)
@@ -332,14 +372,14 @@ always @ (posedge clk or posedge reset) begin
 	end 
 
 	else begin 
-		Data_Memory_Input_EX_MEM<= 	 read_data2;
+		Data_Memory_Input_EX_MEM<= 	 Data_Memory_Input_ID_EX;
 		ALU_OUT_EX_MEM	<=	 ALU_out;
 		RW_EX_MEM		<=	 RW_ID_EX;
 		MemToReg_EX_MEM	<=	 MemToReg_ID_EX;
 		RegWrite_EX_MEM	<=	 RegWrite_ID_EX;
 		MemRead_EX_MEM	<=	 MemRead_ID_EX;
 		MemWrite_EX_MEM	<=	 MemWrite_ID_EX;
-		//DataMemForwardCtrl_MEM_EX_MEM <=DataMemForwardCtrl_MEM_ID_EX;
+		DataMemForwardCtrl_MEM_EX_MEM <=DataMemForwardCtrl_MEM_ID_EX;
 	end 
 end 
 
@@ -353,7 +393,7 @@ end
  data_memory datamem(
           .clk(clk),
           .mem_access_addr(ALU_OUT_EX_MEM),  
-          .mem_write_data(Data_Memory_Input_EX_MEM),
+          .mem_write_data(Data_Memory_actual_in),
           .mem_write_en(MemWrite_EX_MEM),
           .mem_read(MemRead_EX_MEM),  
           .mem_read_data(mem_read_data)
@@ -379,7 +419,7 @@ end
 
 
 assign pc_next = (addrSel==2'b00) ? pc_current+1 :(addrSel == 2'b01) ? {Normal_PC_IF_ID [31:26], Jump_IF_ID} : Normal_PC_IF_ID + Imm_Ext;
-
+assign Data_Memory_actual_in = DataMemForwardCtrl_MEM_EX_MEM ? Register_W_MEM_WB :Data_Memory_Input_EX_MEM;
  // write back  
  assign Register_W_MEM_WB = (MemToReg_MEM_WB == 2'b10) ? pc2:((MemToReg_MEM_WB == 2'b01)? DataOut_MEM_WB: ALU_OUT_MEM_WB); 
  // output  
