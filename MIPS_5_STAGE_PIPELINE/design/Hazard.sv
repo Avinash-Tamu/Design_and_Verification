@@ -45,7 +45,9 @@ end
 
 
  // R Type True Dependency Hazard Flowchart logic
-    always @(*)begin
+ // using forwarding block 
+    
+   always @(*)begin
       if(previousRd==0)  
         DataHazard <= 0;
       else if(op == 0) begin
@@ -57,6 +59,7 @@ end
 	  else	
 				DataHazard <= 0;  
 	end
+	
 // Load Hazard Flowchart logic
     always @(*)begin
       if(previousRt==0)  
@@ -105,7 +108,7 @@ end
 					addrSel = 2'b00;
 					next_state = NoHazard_state;
 				end
-
+/*
 				else if( DataHazard == 1'b1 ) begin
 					IF_write = 1'b0;
 					PC_write = 1'b0;
@@ -113,7 +116,7 @@ end
 					addrSel = 2'b00;
 					next_state = data_hazard_state;
 				end
-				
+*/				
 				else if (Branch == 1'b1)begin
 					IF_write = 1'b0;
 					PC_write = 1'b0;
@@ -165,7 +168,7 @@ end
 				addrSel = 2'b00;
 				next_state = NoHazard_state;
 			end
-
+/*
 			data_hazard_state: begin
 				// Unconditional return to no hazard state
 				IF_write = 1'b0;
@@ -174,7 +177,7 @@ end
 					addrSel = 2'b00;
 				next_state = NoHazard_state;
 			end
-			
+*/			
 			default: begin
 				next_state = NoHazard_state;
 				PC_write = 1'bx;
