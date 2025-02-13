@@ -10,7 +10,7 @@ For Yapp, only the YAPP interface was added, but the design contains Router Desi
 
 - **5-Stage Pipelined MIPS Processor**
 
-It includes key components like the ALU, Control Unit, Register File, Data Path, and Hazard Detection Unit to manage operations, instruction flow, and resolve hazards. 
+It includes key components like the ALU, Control Unit, Register File, Data Path, Forwarding Unit and Hazard Detection Unit to manage operations, instruction flow, and resolve hazards using data forwarding.  
 A Testbench is also provided to validate the functionality of R-type, J-type, and I-type instructions.
 
 
