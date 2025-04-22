@@ -13,7 +13,7 @@ For Yapp, only the YAPP interface was added, but the design contains Router Desi
 It includes key components like the ALU, Control Unit, Register File, Data Path, Forwarding Unit and Hazard Detection Unit to manage operations, instruction flow, and resolve hazards using data forwarding.  
 A Testbench is also provided to validate the functionality of R-type, J-type, and I-type instructions.
 
-# Proximity Aware MESI
+- **Proximity Aware MESI**
 
 This sub-project implements a proximity-aware extension of the MESI cache coherence protocol. It includes:
 
@@ -23,7 +23,7 @@ This sub-project implements a proximity-aware extension of the MESI cache cohere
 
  Directory includes RTL, testbenches, and result logs.
 
-# ALU Cocotb ML Verification
+- **ALU Cocotb ML Verification**
 
 This project integrates machine learning with functional verification using Cocotb:
 
