@@ -1,0 +1,12 @@
+{
+    "lwd_version": "03\/15\/23+23:13:50",
+    "install_root": "\/opt\/coe\/cadence\/XCELIUM",
+    "xlm_version": "22.03-s012",
+    "build_date": "2023.03.15",
+    "xlm_plat": "x86_64",
+    "xlm_bits": "64",
+    "xlm_snapshot": "ALU",
+    "xlm_lib": "worklib",
+    "xlm_view": "sv",
+    "real_as_wreal": "0"
+}

@@ -1,0 +1,52 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Apr 03, 2025 at 13:16:14 CDT
+xrun
+	-timescale 1ns/1ps
+	-vhdl_time_precision 1ps
+	-licqueue
+	-64
+	-xmlibdirpath sim_build
+	-plinowarn
+	-top ALU
+	-loadvpi /home/grads/a/avinsing7/miniconda3/envs/ml_ver/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+	-access +rwc
+	-createdebugdb
+	../design/ALU.sv
+file: ../design/ALU.sv
+	module worklib.ALU:sv
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+	Top level design units:
+		ALU
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ALU:sv <0x1df5723e>
+			streams:   3, words:  2345
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Generating Debug Data:
+		LWD Database path: (/home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/sim/sim_build/xcelium.d/worklib/ALU/sv/debug_db/ALU)
+		Power Aware Instances:                    0
+		Liberty Instances:                        0
+		Out Of Module References:                 0
+		Assertions:                               0
+		Liberty Information:
+			PG Pins:	                  0
+			Liberty Pins:	                  0
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 1       1
+		Registers:               2       2
+		Scalar wires:            1       -
+		Vectored wires:          3       -
+		Always blocks:           1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.ALU:sv
+Loading snapshot worklib.ALU:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/coe/cadence/XCELIUM/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 2003 PS + 0
+xcelium> exit
+TOOL:	xrun(64)	22.03-s012: Exiting on Apr 03, 2025 at 13:16:42 CDT  (total: 00:00:28)

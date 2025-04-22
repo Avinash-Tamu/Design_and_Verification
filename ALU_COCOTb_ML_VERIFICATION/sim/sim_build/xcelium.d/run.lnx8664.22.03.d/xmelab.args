@@ -1,0 +1,30 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+sim_build/xcelium.d/AMSD
+-timescale
+1ns/1ps
+-VHDL_TIME_PRECISION
+1ps
+-LICQUEUE
+-PLINOWARN
+-LOADVPI
+/home/grads/a/avinsing7/miniconda3/envs/ml_ver/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+-ACCESS
++rwc
+-CREATEDEBUGDB
+-MESSAGES
+ALU
+-XLMODE
+sim_build/xcelium.d/run.lnx8664.22.03.d
+-RUNMODE
+-CDSLIB
+sim_build/xcelium.d/run.lnx8664.22.03.d/cds.lib
+-HDLVAR
+sim_build/xcelium.d/run.lnx8664.22.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

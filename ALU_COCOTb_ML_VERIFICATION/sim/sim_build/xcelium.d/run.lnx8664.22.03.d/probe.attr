@@ -1,0 +1,14 @@
+lwd_dir /home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/sim/sim_build/xcelium.d/worklib/ALU/sv/debug_db/ALU/../..
+snapshot_name worklib.ALU:sv
+cells 1
+hostname n03-poseidon.olympus.ece.tamu.edu
+work_directory /home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/sim
+autofetch 0
+persistent_sources 0
+cdslib sim_build/xcelium.d/run.lnx8664.22.03.d/cds.lib
+cds_implicit_tmplib worklib
+hdlvar sim_build/xcelium.d/run.lnx8664.22.03.d/hdl.var
+platform x86_64
+bits 64
+du-agent YES
+xprop 0

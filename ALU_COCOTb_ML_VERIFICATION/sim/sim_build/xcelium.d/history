@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(03Apr2025:13:16:14):( xrun -timescale 1ns/1ps -vhdl_time_precision 1ps -licqueue -64 -xmlibdirpath sim_build -plinowarn -top ALU -loadvpi /home/grads/a/avinsing7/miniconda3/envs/ml_ver/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap -access +rwc -createdebugdb ../design/ALU.sv )

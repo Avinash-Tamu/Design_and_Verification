@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+sim_build/xcelium.d/AMSD
+-LICQUEUE
+-PLINOWARN
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1743704174
+-XLKEEP
+-XLMODE
+sim_build/xcelium.d/run.lnx8664.22.03.d
+-RUNMODE
+-CDSLIB
+sim_build/xcelium.d/run.lnx8664.22.03.d/cds.lib
+-HDLVAR
+sim_build/xcelium.d/run.lnx8664.22.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	22.03-s012"
+-XLNAME
+./sim_build/xcelium.d/run.lnx8664.22.03.d/n03-poseidon.olympus.ece.tamu.edu_724354

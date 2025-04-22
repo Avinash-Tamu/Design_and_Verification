@@ -1,0 +1,12 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1743704184" />
+    <testcase name="my_first_test" classname="test_my_design" file="/home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/pyTB/test_my_design.py" lineno="80" time="0.0019032955169677734" sim_time_ns="1.001" ratio_time="525.929889014155">
+      <failure message="Test failed with RANDOM_SEED=1743704184" />
+    </testcase>
+    <testcase name="my_second_test" classname="test_my_design" file="/home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/pyTB/test_my_design.py" lineno="122" time="0.00051116943359375" sim_time_ns="1.001" ratio_time="1958.254805970149">
+      <failure message="Test failed with RANDOM_SEED=1743704184" />
+    </testcase>
+    <testcase name="coverage_report" classname="test_my_design" file="/home/grads/a/avinsing7/UVM/ALU_COCOTb_ML_VERIFICATION/pyTB/test_my_design.py" lineno="161" time="0.0007274150848388672" sim_time_ns="0.001000000000000334" ratio_time="1.3747309078995087" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ps
+-VHDL_TIME_PRECISION
+1ps
+
+ALU
+-LOADVPI
+/home/grads/a/avinsing7/miniconda3/envs/ml_ver/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+-ACCESS
++rwc
+-CREATEDEBUGDB
